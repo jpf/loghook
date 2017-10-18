@@ -89,6 +89,7 @@ func (l *logEventResult) getEvents(loc string) error {
     req.Header.Add("Authorization", "SSWS "+l.logClient.apiToken)
     req.Header.Add("Cache-Control", "no-cache")
     req.Header.Add("Content-Type", "application/json")
+    req.Header.Add("User-Agent", userAgent)
 
     resp, err := http.DefaultClient.Do(req)
     if err != nil {
@@ -230,7 +231,7 @@ func makeUserAgent() string {
     }
     userAgent := fmt.Sprintf("%s/%s go/%s %s/%s",
         "loghook", // clientName
-        "0.0.3",   // Version
+        "0.0.4",   // Version
         goVersion,
         runtime.GOOS,
         osVersion,
