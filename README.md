@@ -1,1 +1,1 @@
-Git repo for the literate document and code behind the Okta Blog post "Add the Power of Webhooks to Your App with Okta's System Log"
+Git repo for the literate document and code behind the Okta Blog post "[Add the Power of Webhooks to Your App with Okta's System Log](https://developer.okta.com/blog/2017/10/17/add-the-power-of-webhooks-to-your-app-with-oktas-system-log)"
